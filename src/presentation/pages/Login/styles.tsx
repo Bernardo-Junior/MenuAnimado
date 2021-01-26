@@ -1,7 +1,7 @@
 
 import styled from 'styled-components/native';
 
-import normalize from './responsividade';
+import normalize from '../../responsivity';
 
 interface IButtonExisting {
   active: boolean;

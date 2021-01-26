@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const boat = require('./assets/boat.png');
+const boat = require('../../../assets/boat.png');
 
 import {
   Animated,
@@ -24,7 +24,7 @@ interface IAnimatedTiming {
   duration: number;
 }
 
-import normalize from './responsividade';
+import normalize from '../../responsivity';
 
 const App: React.FC = () => {
   const [active1, setActive1] = useState<boolean>(true);
