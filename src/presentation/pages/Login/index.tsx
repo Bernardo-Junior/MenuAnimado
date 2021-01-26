@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const boat = require('../../../assets/boat.png');
+const fishingBoat = require('../../../assets/fishing-boat.png');
 
 import {
   Animated,
@@ -89,7 +89,7 @@ const App: React.FC = () => {
     <>
       <StatusBar backgroundColor="#DBD5F1" barStyle='dark-content' />
       <ContainerMain>
-        <ImageHeader source={boat} resizeMode="cover" />
+        <ImageHeader source={fishingBoat} resizeMode="cover" />
         <Container>
           <ButtonOp active={active1} onPress={() => { singIn() }} >
             <TextButton active={active1}>
