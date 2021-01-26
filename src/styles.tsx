@@ -1,4 +1,3 @@
-import { Animated } from 'react-native';
 
 import styled from 'styled-components/native';
 
@@ -73,6 +72,10 @@ export const TextViewDate = styled.Text`
   color:  #000000;
   font-size: ${normalize(40)}px;
  
+`;
+
+export const ViewCards = styled.View`
+  flex-direction: row;
 `;
 
 

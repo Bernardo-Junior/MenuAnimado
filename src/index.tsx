@@ -1,21 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
-import boat from './assets/boat.png';
+const boat = require('./assets/boat.png');
 
 import {
-  View,
-  Text,
   Animated,
- 
   StatusBar,
-  TouchableOpacity,
-  Image
 } from 'react-native';
-
-
-import Login from './components/Login';
-
-import Signin from './components/Signin';
 
 import { 
   Container, 
@@ -25,7 +15,8 @@ import {
   ViewDate,
   ContainerMain,
   ViewinViewDate,
-  TextViewDate
+  TextViewDate,
+  ViewCards
 } from './styles';
 
 interface IAnimatedTiming {
@@ -118,7 +109,8 @@ const App: React.FC = () => {
             </TextButton>
           </ButtonOp>
         </Container>
-        <View style={{ flexDirection: 'row', }}>
+
+        <ViewCards>
 
 
           <ViewDate as={Animated.View} style={{transform: [{ translateX: pos2}]}}>
@@ -132,7 +124,7 @@ const App: React.FC = () => {
               <TextViewDate>New</TextViewDate>
             </ViewinViewDate>
           </ViewDate>
-        </View>
+        </ViewCards>
       </ContainerMain>
     </>
 
