@@ -19,10 +19,6 @@ import {
   ViewCards
 } from './styles';
 
-interface IAnimatedTiming {
-  toValue: number;
-  duration: number;
-}
 
 import normalize from '../../responsivity';
 

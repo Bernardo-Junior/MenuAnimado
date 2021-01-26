@@ -3,10 +3,7 @@ import styled from 'styled-components/native';
 
 import normalize from '../../responsivity';
 
-interface IButtonExisting {
-  active: boolean;
-}
-
+import { IButtonExisting } from '../../../data/protocols/Login';
 
 export const ContainerMain = styled.View`
   flex:1;
