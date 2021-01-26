@@ -34,7 +34,7 @@ const App: React.FC = () => {
 
 
 
-  const entrar1 = () => {
+  const loginIn = () => {
     setActive1(false)
     setActive2(true)
     Animated.parallel([
@@ -61,7 +61,7 @@ const App: React.FC = () => {
 
   }
 
-  const cadastrar1 = async () => {
+  const singIn = async () => {
     setActive1(true)
     setActive2(false)
 
@@ -95,13 +95,13 @@ const App: React.FC = () => {
       <ContainerMain>
         <ImageHeader source={boat} resizeMode="cover" />
         <Container>
-          <ButtonOp active={active1} onPress={() => { cadastrar1() }} >
+          <ButtonOp active={active1} onPress={() => { singIn() }} >
             <TextButton active={active1}>
               Existing
             </TextButton>
           </ButtonOp>
 
-          <ButtonOp active={active2} onPress={() => (entrar1())} >
+          <ButtonOp active={active2} onPress={() => (loginIn())} >
             <TextButton
               active={active2}
             >
